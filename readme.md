@@ -1,8 +1,8 @@
 # Intended Learning Strategy
 
-This repo is a concise summary and replacement of the [AWS Lambda](https://acloud.guru/learn/aws-lambda) tutorial by "A Cloud Guru".
+1. Spend about 30 minutes on the [Serverless Hello World](https://aws.amazon.com/getting-started/tutorials/run-serverless-code) tutorial for quick hands-on Lambda creation.
+1. This repo is a concise summary and replacement of the [AWS Lambda](https://acloud.guru/learn/aws-lambda) tutorial by "A Cloud Guru". Read this repo linearly from top to bottom. You do not need to access the above course to learn AWS Lambda. However, the course link is provided just in case you need more information about a topic, or if you need video examples (such as how to hook up AWS Kinesis to Lambda)
 
-Read this repo linearly from top to bottom. You do not need to access the above course to learn AWS Lambda. However, the course link is provided just in case you need more information about a topic, or if you need video examples (such as how to hook up AWS Kinesis to Lambda)
 
 # Section 1
 
