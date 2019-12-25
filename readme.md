@@ -3,7 +3,7 @@
 </p>
 
 
-# Intended Learning Strategy
+# AWS Lambda - Learning Strategy
 
 1. Spend 10 minutes on the [Serverless Hello World](https://aws.amazon.com/getting-started/tutorials/run-serverless-code) tutorial. You will:
     1. Create a Lambda with code populated for you
