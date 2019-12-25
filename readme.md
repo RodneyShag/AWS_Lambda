@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="images/lambda_logo.png">
+</p>
+
+
 # Intended Learning Strategy
 
 1. Spend 10 minutes on the [Serverless Hello World](https://aws.amazon.com/getting-started/tutorials/run-serverless-code) tutorial. You will:
