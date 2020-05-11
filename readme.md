@@ -10,7 +10,7 @@
     1. Test the Lambda with simple sample data
     1. View the logs CloudWatch created for you in Lambda's "Monitoring" tab
 1. This repo is a concise summary and _replacement_ of the [AWS Lambda](https://acloud.guru/learn/aws-lambda) tutorial by "A Cloud Guru". The course link is provided in case you need video examples (such as how to hook up AWS Kinesis to Lambda).
-
+1. (Optional) [Serverless Architectures with AWS Lambda](https://d1.awsstatic.com/whitepapers/serverless-architectures-with-aws-lambda.pdf?did=wp_card&trk=wp_card)
 
 # Section 1
 
@@ -110,8 +110,21 @@
 
 - __What is 1 way to put records into a Kinesis stream?__ - (0:05) Can use AWS CLI to put JSON records into a Kinesis stream. The CLI will base-64 encode the records for you.
 
+
 # Section 5 - DynamoDB
 
 ### Create and Test the Function
 
 - __What is 1 use case for DynamoDB with Lambda?__ - (Entire section) Can have DynamoDB be a trigger for Lambda. When an item is written to DynamoDB, a Lambda can be triggered, which can add additional key/values to that item. For example, Lambda can take DynamoDB item with `gross` and `cost`, calculate `profit = gross - cost`, and write that item back to DynamoDB with the additional key/value pair for `profit`.
+
+
+# [Serverless Architectures with AWS Lambda](https://d1.awsstatic.com/whitepapers/serverless-architectures-with-aws-lambda.pdf?did=wp_card&trk=wp_card)
+
+These notes are not from the course.
+
+- __What is a "warm container"?__ (Page 12/50) When subsequent invocations occur on a container that has already been active and invoked at least once before.
+- __How can you improve the performance of your function code when a warm container is invoked?__ (Page 33/50)
+  - Store configuration/dependencies your code retrieves (after initial execution)
+  - Use global/static variables & singletons. Limit reinitialization of variables/objects on every invocation.
+  - Keep alive and reuse connections (HTTP, database, etc.) that were established during a previous invocation.
+- Resource: [AWS Serverless Tools](https://aws.amazon.com/serverless)
